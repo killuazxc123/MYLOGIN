@@ -1,0 +1,222 @@
+/*Google Fonts - Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background: linear-gradient(to left top,#000000 40%, #ffe600);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12%;
+}
+.form{
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #ffd000;
+    box-shadow: 0 0 10px 10px;
+    border: 4px solid #000000;
+    animation: animated 3s linear infinite;
+}
+@keyframes animated{
+    18.1%, 20.1%,30%,50%,100%{
+        box-shadow: 0 0 30px #ffd900,
+                    0 0 40px #fbff00,         
+                    0 0 50px #000000,
+                    0 0 70px #ff0000,
+                    0 0 100px #ffffff;
+    }
+}
+form{
+    margin-top: 30px;
+}
+.form .field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+header{
+    font-size: 40px;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+	font-family:'Nunito Sans', sans-serif;
+    position: relative;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    width: 100%;
+    line-height: 1.00em;
+    animation: animate 3s linear infinite;
+}
+@keyframes animate{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color: #000000;
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color: #000000;
+        text-shadow: 0 0 100px #ffd000,
+                    0 0 20px #ffd000,
+                    0 0 40px #ffd000,
+                    0 0 80px #ffd000,
+                    0 0 160px #ffd000;
+    }
+}
+.field input,
+.field button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+    font-family: 'Open Sans', sans-serif;
+}
+.field input{
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid#000000;
+}
+input::placeholder{
+	transition: 0.2s ease;
+}
+input:focus::placeholder{
+	position: absolute;
+	transform: translateY(-20px);
+}
+.field input:focus{
+    border-bottom-width: 4px;
+    transition: 0.2s ease;
+}
+.eye-icon{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #696969;
+    cursor: pointer;
+    padding: 5px;
+}
+.field button{
+    color: #000000;
+    background-color: #ffd000;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.field button:hover{
+    background-color: #ffbb00;
+}
+.form-link{
+    text-align: center;
+    margin-top: 10px;
+}
+.form-link span,
+.form-link a{
+    font-size: 14px;
+    font-weight: 400;
+    color:#000000;
+}
+.form a{
+    color: #0171d3;
+    text-decoration: none;
+}
+.form-link a:hover{
+    text-decoration: underline;
+}
+.line{
+    position: relative;
+    height: 1px;
+    width: 100%;
+    margin: 36px 0;
+    background-color: #b8b8b8;
+}
+.line::before{
+    content: 'Or';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    color: #000000;
+    padding: 0 15px;
+}
+.media-optionsf a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.media-optionsg a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a.facebook{
+    color: #fff;
+    background-color: #0165E1;
+    border-radius: 6px;
+    padding: 8px 0;
+}
+a.facebook:hover{
+    background-color: #005ac9;
+}
+a.facebook .facebook-icon{
+    padding-top: 7px;
+    padding-left: 2px;
+    height: 26px;
+    width: 26px;
+    color: #0165E1;
+    font-size: 27px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+.facebook-icon{
+    position: relative;
+    right: 45px;
+    transform: translateX(-50%);
+}
+img.google-img{
+    position: relative;
+    right: 57px;
+    transform: translateX(-50%);
+}
+img.google-img{
+    height: 25px;
+    width: 25px;
+    object-fit: cover;
+}
+a.google{
+    background-color:#ececec;
+    border: 1px solid #ffffff;
+    position: absolute;
+    bottom:  10px;
+}
+a.google:hover{
+    background-color: #dadada;
+}
+a.google span{
+    font-weight: 500;
+    color: #000000;
+}
+.Error {
+    color: red;
+}
